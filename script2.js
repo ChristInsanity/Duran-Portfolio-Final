@@ -86,7 +86,7 @@ function initRevealAnimations() {
 
 function prepareRevealItems() {
   document
-    .querySelectorAll(".about-info-card, .tech-category-card, .contact-card, .contact-form")
+    .querySelectorAll(".about-info-card, .tech-category-card, .contact-card, .contact-form, .contact-video-card")
     .forEach((item) => item.classList.add("reveal"));
 }
 
