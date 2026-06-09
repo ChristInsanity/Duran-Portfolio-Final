@@ -60,11 +60,12 @@
   }
 
   .about-image-placeholder {
+    aspect-ratio: 4 / 5;
     min-height: auto;
   }
 
   .about-placeholder-frame {
-    min-height: 18rem;
+    min-height: 0;
   }
 }
 
