@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Christian Dave Duran | Portfolio</title>
+    <title>Projects | Christian Dave Duran</title>
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="media2.css" />
   </head>
-  <body data-page="home">
+  <body data-page="projects">
     <nav class="site-nav" id="desktop-nav">
       <a class="logo" href="index.html">Christian Dave Duran</a>
       <ul class="nav-links">
@@ -39,31 +39,30 @@
     </nav>
 
     <main>
-      <section class="page-section hero-page reveal">
-        <div class="page-shell hero-grid">
-          <div class="hero-copy">
-            <h1 class="hero-title">FULLSTACK WEB DEVELOPER</h1>
-            <p class="hero-typing"><span id="typed-text"></span></p>
-            <p class="hero-description">
-              Passionate about building modern web applications, solving real-world problems through technology, and continuously improving in software development, databases, networking, and emerging technologies.
-            </p>
-            <div class="hero-social-links" aria-label="Social links">
-              <a href="https://github.com/ChristInsanity" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <img src="./assets/github.png" alt="" class="icon" />
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100053012362208" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <img src="./assets/facebook.png" alt="" class="icon" />
-              </a>
-              <a href="https://www.instagram.com/christianduran23133/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <img src="./assets/instagram.png" alt="" class="icon" />
-              </a>
-            </div>
+      <section class="page-section reveal">
+        <div class="page-shell">
+          <div class="section-heading">
+            <p class="section__text__p1">PROJECTS</p>
+            <h1 class="title">Academic projects, creative work, and capstone-level systems.</h1>
+            <p>Foundation Projects -> Development Projects -> Advanced Projects</p>
           </div>
+          <div id="projects-container" class="projects-wrapper"></div>
         </div>
       </section>
     </main>
+
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="project-modal__overlay" data-close-modal></div>
+      <div class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="project-modal__close" type="button" aria-label="Close project details" data-close-modal>&times;</button>
+        <p class="section__text__p1" id="modal-category"></p>
+        <h2 class="title modal-title" id="modal-title"></h2>
+        <div id="modal-body"></div>
+      </div>
+    </div>
 
     <script src="typed.js"></script>
     <script src="script2.js"></script>
   </body>
 </html>
+

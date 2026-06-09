@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Christian Dave Duran</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="media2.css" />
+  </head>
+  <body data-page="contact">
+    <nav class="site-nav" id="desktop-nav">
+      <a class="logo" href="index.html">Christian Dave Duran</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page-link="home">Home</a></li>
+        <li><a href="about.html" data-page-link="about">About</a></li>
+        <li><a href="projects.html" data-page-link="projects">Projects</a></li>
+        <li><a href="contact.html" data-page-link="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="site-nav" id="hamburger-nav">
+      <a class="logo" href="index.html">Christian Dave Duran</a>
+      <div class="mobile-nav-actions">
+        <div class="hamburger-menu">
+        <button class="hamburger-icon" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu-links">
+          <li><a href="index.html" data-page-link="home">Home</a></li>
+          <li><a href="about.html" data-page-link="about">About</a></li>
+          <li><a href="projects.html" data-page-link="projects">Projects</a></li>
+          <li><a href="contact.html" data-page-link="contact">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-section reveal">
+        <div class="page-shell contact-layout">
+          <div class="contact-copy">
+            <p class="section__text__p1">Contact</p>
+            <h1 class="title">Let's build something practical.</h1>
+            <p>
+              For academic collaboration, project discussions, or portfolio inquiries, reach out through email or social platforms.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="details-container contact-card">
+              <img src="./assets/email.png" alt="Email icon" class="icon email-icon" />
+              <h2>Email</h2>
+              <a href="mailto:Xian23xian23xain@gmail.com">Xian23xian23xain@gmail.com</a>
+            </article>
+            <article class="details-container contact-card">
+              <img src="./assets/287739_facebook_icon.png" alt="Facebook icon" class="icon" />
+              <h2>Facebook</h2>
+              <a href="https://www.facebook.com/profile.php?id=100053012362208" target="_blank" rel="noopener noreferrer">Facebook Profile</a>
+            </article>
+            <article class="details-container contact-card">
+              <img src="./assets/instagram.png" alt="Instagram icon" class="icon" />
+              <h2>Instagram</h2>
+              <a href="https://www.instagram.com/christianduran23133/" target="_blank" rel="noopener noreferrer">@christianduran23133</a>
+            </article>
+            <article class="details-container contact-card">
+              <img src="./assets/github.png" alt="GitHub icon" class="icon" />
+              <h2>GitHub</h2>
+              <a href="https://github.com/ChristInsanity" target="_blank" rel="noopener noreferrer">ChristInsanity</a>
+            </article>
+          </div>
+
+          <form class="details-container contact-form" aria-label="Contact form placeholder">
+            <h2>Contact Form Placeholder</h2>
+            <input type="text" name="name" placeholder="Your name" />
+            <input type="email" name="email" placeholder="Your email" />
+            <textarea name="message" rows="5" placeholder="Your message"></textarea>
+            <button class="btn btn-color-1" type="button">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="typed.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
+

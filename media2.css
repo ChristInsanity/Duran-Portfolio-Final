@@ -1,138 +1,145 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 1rem;
+@media screen and (max-width: 1100px) {
+  .technology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .about-containers {
-    flex-wrap: wrap;
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  #about,
-  #contact,
-  #projects {
-    height: fit-content;
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
-    display: flex;
+    display: grid;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 1rem;
+
+  .about-modern-layout,
+  .modal-content-grid {
+    grid-template-columns: 1fr;
   }
-  #profile,
-  .section-container {
-    display: block;
-    margin-bottom: 20rem;
-    margin-top: 0;
+
+  .about-info-grid {
+    grid-template-columns: 1fr;
   }
-  .arrow {
-    display: none;
+
+  .hero-page {
+    min-height: auto;
   }
-  section,
-  .section-container {
-    height: fit-content;
+
+  .hero-title,
+  .section-heading .title,
+  .about-title,
+  .contact-copy .title {
+    text-align: center;
   }
-  
-  section {
-    margin: 0 5%;
+
+  .hero-copy,
+  .section-heading,
+  .contact-copy {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
-  .section__pic-container {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto 4rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
-  .btn-container {
-    flex-wrap: wrap;
+
+  .hero-actions,
+  #socials-container,
+  .hero-social-links {
     justify-content: center;
   }
-  #socials-container {
-    justify-content: center;
-    margin-left: 0;
+
+  .about-image-placeholder {
+    min-height: auto;
   }
-  #about {
-    height: fit-content;
-    
+
+  .about-placeholder-frame {
+    min-height: 18rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+@media screen and (max-width: 700px) {
+  body {
+    padding-top: 4.5rem;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    
-  }
-  .btn-container{
-    margin-right: 2.5em;
-  }
-  #typed-text{
-    margin-right: 2.5rem;
-  }  
 
-  #typed-hello{
-    margin-right: 2.5rem;
+  body[data-page="home"] {
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 0;
   }
-  .contact-info-container {
-    margin: 0;
+
+  body[data-page="home"] main {
+    height: calc(100vh - 4.5rem);
+    overflow: hidden;
   }
-  .contact-info-container p,
-  .nav-links li a {
+
+  .site-nav {
+    grid-template-columns: 1fr auto;
+    height: 4.5rem;
+    padding: 0 1rem;
+  }
+
+  .page-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero-page {
+    min-height: 0;
+    padding-bottom: 4.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.05rem, 9.3vw, 2.95rem);
+  }
+
+  .hero-typing {
     font-size: 1rem;
+    min-height: 2.9rem;
   }
-  .experience-sub-title {
-    font-size: 1.25rem;
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.65;
   }
-  .logo {
-    font-size: 1.5rem;
+
+  .technology-grid,
+  .project-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+
+  .article-container,
+  .tech-list {
+    grid-template-columns: 1fr;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    margin-top: 1rem;
-    justify-content: center;
+
+  .project-image-wrap {
+    min-height: 14rem;
   }
- 
-  .section__text__p2 {
-    font-size: 1.25rem;
-    margin-left: 0;
+
+  .project-modal.open {
+    align-items: flex-start;
+    padding: 0.75rem;
   }
-  #socials-container {
-    justify-content: center;
-    margin-right: 1rem;
+
+  .project-modal__content {
+    border-radius: 1.15rem;
+    max-height: calc(100vh - 1.5rem);
   }
-  .title {
-    font-size: 2rem;
+
+  .modal-image-wrap {
+    aspect-ratio: 4 / 3;
   }
-  .text-container {
-    text-align: justify;
+
+  .contact-form button {
+    justify-self: stretch;
   }
 }
